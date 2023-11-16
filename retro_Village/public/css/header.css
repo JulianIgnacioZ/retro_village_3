@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    gap: .3rem;
+    width: 100%;
+    padding: .7rem 1.1rem .5rem .3rem;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Girassol";    
+    background: url("../assets/img/fondo-footer.png"), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;            
+    background-position: top;
+    position: relative;
+    height: 45px;
+}
+
+header img {
+    width: 29px;
+    height: 29px;
+}
+
+header .menu-img {
+    width: 18px;
+    height: 18px;
+}
+
+.header_h1 {
+    color: #D9F55D;
+    font-family: "Geostar";
+    font-size: 1rem;
+}
+
+.header_input {
+    border: 1px solid #D9F55D;
+    background-color: #bc5df5;
+    border-radius: 2rem;
+    padding: .3rem .4rem;
+    font-size: .7rem;
+    font-family: "Girassol";    
+    color: white;
+    width: 155px;
+}
+
+.header_input::placeholder {    
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.header_rejillas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    transform: rotate(-180deg)
+}
+
+@media (min-width: 768px) {
+    header {
+        justify-content: end;
+        gap: 1rem;
+        height: 60px;
+        position: relative;
+        padding-right: 35px;
+    }
+
+    .header_h1 {
+        font-size: 30px;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+    .header_rejillas {
+        height: 60px;
+        width: 60px;
+    }
+
+    header img {
+        width: 36px;
+        height: 36px;
+    }
+
+    header .menu-img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header_input {
+        width: 300px; 
+        font-size: 14px;                
+    }
+}
+
+@media (min-width: 1024px) {    
+    .header_input {
+        width: 350px;         
+        padding-left: 15px;
+    }
+    header {
+        padding-right: 40px;
+    }    
+}

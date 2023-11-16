@@ -1,0 +1,209 @@
+main .details {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.detail_contentImg {
+    position: relative;
+    width: 300px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.contentImg_rejillas {
+    position: absolute;
+    opacity: .6;
+}
+
+.contentImg_rejillas:nth-child(1) {
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.contentImg_rejillas:nth-child(2) {
+    right: 0;
+    top: 0;
+    transform: rotate(-180deg);
+}
+
+.contentImg_rejillas:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.contentImg_rejillas:nth-child(4) {
+    left: 0;
+    bottom: 0;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detail_contentImg .img-main {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2rem;
+    height: 200px;
+    box-shadow: -1px 2px 83px 7px rgba(197, 7, 235, 1);
+}
+
+.promo {
+
+    background: linear-gradient(180deg, #D9F45D 0%, rgba(217, 217, 217, 0.00) 100%);
+    padding: .2rem .5rem;
+    font-family: "Genos";
+    font-weight: bold;
+}
+
+main .details {
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.detail_text {
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #5D1E8E 0%, rgba(219, 182, 247, 0.00) 100%);
+    box-shadow: 4px 4px 7px 6px rgba(0, 0, 0, 0.25);
+    font-family: "Genos";
+    font-weight: bold;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.detail_footer {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    font-family: "Genos";
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.detail_footer>a {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 0 .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    background: linear-gradient(180deg, #6B15AE 0%, rgba(107, 21, 174, 0.00) 100%);
+    box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+
+.detail_precio {
+    background-color: #5A0B99;
+    padding-left: .5rem;
+}
+
+.detail_precio button {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #A89A1E 0%, rgba(143, 168, 30, 0.00) 100%);
+    color: white;
+    padding: .2rem .5rem;
+    font-family: "Genos";
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.detail_footer>div>button {
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #D9F55D 0%, rgba(217, 245, 93, 0.00) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    margin-top: .5rem;
+    padding: .2rem .5rem;
+    font-family: "Genos";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.group-p {
+    display: none;
+}
+
+.login-absolute-right {
+    display: none;
+}
+
+.login-absolute-left {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .login h1 {
+        margin: 0 auto;
+    }
+
+    .detail_contentImg {
+        width: 500px;
+    }
+
+    .detail_contentImg .img-main {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .promo {
+        display: none;
+    }
+
+    .group {
+        flex-direction: row;
+        margin: 0 2rem;
+        justify-content: center;
+    }
+
+    .detail_text {
+        width: 400px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .group {
+        gap: 3rem;
+    }
+
+    .detail_contentImg {
+        width: 400px;
+        margin: 2rem 0;
+    }
+
+    .detail_contentImg .img-main {
+        height: 220px;
+    }
+
+    .group-p {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .group-p img {
+        width: 80px;
+        height:
+            80px;
+    }
+
+    .login-absolute-left {
+        width: 80px;
+    }
+
+    .login-absolute-right {
+        width: 80px;
+        right: 0;
+        top: 40%;
+        margin-right: -40px;
+    }
+}

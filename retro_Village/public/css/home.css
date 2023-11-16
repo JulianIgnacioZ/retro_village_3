@@ -1,0 +1,217 @@
+main .home {
+    background-color: #7C2FA8;
+}
+
+.home_ul {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.home-absolute {
+    height: 50px;
+    position: absolute;
+    opacity: .2;
+}
+
+.home-absolute-left {
+    left: 0;
+    top: 70%;
+    margin-left: -40px;
+    height: 80px;
+}
+
+.home-absolute-right {
+    right: 10%;
+    top: 40%;
+}
+
+.home-absolute-center {
+    left: 5%;
+    top: 50%;
+    height: 60px;
+}
+
+.home-absolute-top {
+    top: 10%;
+    left: 10%;
+    height: 65px;
+}
+
+.home_li img {
+    width: 60%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 4rem;
+    box-shadow: -1px 2px 83px 7px rgba(197, 7, 235, 1);
+}
+
+.home_li .buttoms {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.home_li .buttoms div {
+    display: flex;
+    font-size: .8rem;
+    background-color: #5A0B99;
+    height: 35px;
+    padding-left: .5rem;
+    align-items: center;
+    font-family: "Geostar Fill";
+}
+
+.home_li .buttoms button {
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #D9F55D 0%, rgba(217, 245, 93, 0.00) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: .2rem .5rem;
+    font-family: "Geostar Fill";
+    font-size: .7rem;
+}
+
+.home_li .buttoms div a {
+    display: flex;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    background: linear-gradient(180deg, #8FA81E 0%, rgba(143, 168, 30, 0.00) 100%);
+    color: white;
+    padding: 0 .5rem;
+    margin-left: .5rem;
+    height: 100%;
+    align-items: center;
+}
+
+.group-right {
+    background-color: #7C2FA8;
+}
+
+.productos_par,
+.productos_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contentProductos .login {
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.contentProductos .home h1 {
+    margin-bottom: 2.5rem;
+}
+
+.oferta {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.oferta h2 {
+    font-family: "Girassol";
+    font-weight: lighter;
+}
+
+.oferta>img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.oferta_info {
+    display: flex;
+    padding: .5rem;
+    gap: .5rem;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: linear-gradient(90deg, #5D1E8E 0%, rgba(219, 182, 247, 0.00) 100%);
+    box-shadow: 4px 4px 7px 6px rgba(0, 0, 0, 0.25);
+    font-family: "Girassol";
+}
+
+.oferta_info a {
+    background: linear-gradient(180deg, #8FA81E 0%, rgba(143, 168, 30, 0.00) 100%);
+    color: white;
+    padding: .2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .home_li img {
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .home_ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home_li {
+        width: 250px;
+    }
+
+    .home_li img {
+        width: 70%;
+        height: 150px;
+    }
+
+    .home_ul {
+        width: 95%;
+    }
+
+    .home_li .buttoms div {
+        height: 55px;
+    }
+
+    .productos_par {
+        padding: 6rem 2rem;
+        gap: 3rem;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #C2E535 0%, rgba(201, 4, 191, 0.3) 0.01%, rgba(220, 6, 255, 0.00) 100%);
+    }
+
+    .productos_right {
+        border-radius: 5px;
+        border: 2px solid #D9F55D;
+        padding: 3rem 1rem 1rem 1rem;
+        gap: 6rem;
+        box-shadow: 4px 6px 6px 4px, 6px 4px 8px 7px inset;
+    }
+
+    .oferta {
+        display: flex;
+    }
+}
+
+@media (min-width: 1100px) {
+    .home_li {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home_li {
+        width: 320px;
+    }
+
+    .home_li .buttoms button {
+        height: 40px;
+    }
+
+    .home_li .buttoms div {
+        height: 40px;
+    }
+}

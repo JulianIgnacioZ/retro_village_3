@@ -1,0 +1,65 @@
+footer {
+    position: relative;    
+    height: 60px;
+    background: url("../assets/img/fondo-footer.png"), lightgray 50% / cover no-repeat;
+    background-size: cover;        
+}
+
+footer div {
+    display: flex;
+    padding: .3rem 1.5rem;
+    align-items: center;
+    height: 100%;
+    color: white;
+    justify-content: space-between;
+}
+
+footer span {
+    color: #D9F55D;
+    font-family: "Genos";
+    font-weight: bold;
+}
+
+footer span:first-child {    
+    color: #bc5df5;
+}
+
+footer .rejillas {
+    position: absolute;
+    top: 0;
+    height: 60px;
+}
+
+footer .rejillas.left {
+    left: 0;
+}
+
+footer .rejillas.right {
+    right: 0;    
+    transform: rotate(-90deg)
+}
+
+footer .redes {
+    width: 40px;
+    height: 40px;
+}
+
+@media ( min-width: 1024px) {
+    footer div {
+        font-size: 1.4rem
+    }
+
+    footer {
+        height: 80px;
+        padding: 0 1.5rem;
+    }
+    
+    footer .rejillas {
+        height: 80px;
+    }
+
+    footer .redes {
+        width: 55px;
+        height: 55px;
+    }
+}
